@@ -48,11 +48,19 @@ done = False
 attempts = 0 
 guess = random.randint(1,100)
 guess_step = 10
-prev_answer = answer
+prev_answer = ""
 
 while not done:
     answer = input('Is it ' + str(guess) + '? (y = yes, l = less than that, g = greater than that)\n')
     attempts = attempts + 1
+
+    print('attempts = ', attempts, 'prev_answer = ', prev_answer, 'answer = ', answer)
+
+    if attempts > 1: 
+        if prev_answer != answer:
+            guess_step = guess_step - 1
+
+    prev_answer = answer
 
     if answer == 'l':
         guess = guess - guess_step
