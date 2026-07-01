@@ -1,7 +1,11 @@
 import random
-n = random.randint(1,100)
 
-print('I have picked a number between 1-100. Can you guess it?')
+print('Choose difficulty(Easy or Hard): ')
+diff = input()
+n = random.randint(1,50)
+
+if diff == "Easy":
+print('I have picked a number between 1-50. Can you guess it?')
 
 
 attempts = 0
