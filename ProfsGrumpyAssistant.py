@@ -6,7 +6,7 @@ print()
 answer = input("In the game of chess, what color always moves first?\n")
 
 if answer.lower() == "white":
-    print("You got it correct! But that was only the warm-up...")
+    print("You got it correct! But that was only the warm-up...\n")
 else:
     print("Wrong! Your chances of meeting the professor are slim now.")
     print()
@@ -29,4 +29,10 @@ if len(word) == 8:
     if count_vowels>3:
         print("Oops...you gave me more than 3 vowels")
         print("You wasted my precious time! I only needed 3.")
+    elif count_vowels<3:
+        print("Oops...you gave me less than 3 vowels")
+        print("You tried acting smart... I caught you.")
+    else: 
+        #Exactly 3 vowels
+        print("What how... exactly 3 vowels")
 
