@@ -5,12 +5,12 @@ print('Welcome to Flower Boutique!')
 print()
 inventory = []
 
-menu = ['Daisies', 'Roses', 'Sunflowers', 'Lilies', 'Tulips']
+menu = ['Daisies','Lilacs','Sunflowers','Lilies','Tulips']
 price = [18.99, 12.99, 10.99, 14.99, 19.99]
 
-special_items = ['Boutique Bouquet ', 'Dried Mini-Bouquet ', 'Mystery Box ', 'Glass Vase ', 'Press-Flower Card ', 'Scented Candle ', 'Plant Care Kit ', 'Seed Packet ', 'Potted Succulent '  ]
+special_items = [' Spcl Bouquet ', 'Dried Bouquet ', 'Mystery Box ', 'Glass Vase ', 'Flower Card ', 'Scented Candle ', 'Plant Kit ', 'Seed Packet ', 'Succulents '  ]
 
-special_items_prc = [34.99, 21.50, 29.99, 24.00, 20.00, 26.50, 31.99, 22.75, 28.00]
+special_items_prc = [34.99, 21.59, 29.99, 24.59, 20.99, 26.59, 31.99, 22.75, 28.99]
 
 spcl_idx = random.randint(0,len(special_items_prc) - 1)
 menu.append(special_items[spcl_idx])
@@ -64,7 +64,7 @@ while shopping_complete == 0:
 print()
 
 print('Shopping is complete, displaying shopping cart...')
-print('ITEM', 'QUANT', 'UNIT PRICE', '\b\b\b\b\b\b\b\bTOTAL', sep='\t\t\t')
+print('ITEM', 'QUANT', 'UNIT PRICE', 'TOTAL', sep='\t\t\t')
 
 grand_tot = 0.0
 
